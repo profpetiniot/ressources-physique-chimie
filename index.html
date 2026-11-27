@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Espace de ressources pédagogiques en physique-chimie pour les élèves, les familles et les enseignants.">
+  <meta name="theme-color" content="#10243b">
+  <title>Physique-Chimie | Espace pédagogique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Accueil Physique-Chimie">
+      <span class="brand-mark">⚛</span>
+      <span><strong>PHYSIQUE-CHIMIE</strong><small>ESPACE PÉDAGOGIQUE</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ <span class="sr-only">Ouvrir le menu</span></button>
+    <nav id="mainNav" class="main-nav" aria-label="Navigation principale">
+      <a href="#classes">Les classes</a>
+      <a href="#methodes">Méthodes</a>
+      <a href="#explorer">Pour explorer</a>
+      <a href="#infos">Informations</a>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> APPRENDRE · EXPÉRIMENTER · COMPRENDRE</p>
+        <h1>Les sciences pour<br><span>comprendre le monde.</span></h1>
+        <p class="hero-lead">Un espace pour retrouver les cours, revoir les notions, s'entraîner et explorer la physique-chimie autrement.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#classes">Accéder aux ressources <span>→</span></a>
+          <a class="button button-ghost" href="#explorer">Découvrir les outils</a>
+        </div>
+        <p class="hero-note">Ressources pour les élèves, les familles et les collègues.</p>
+      </div>
+      <div class="hero-visual" aria-label="Illustration scientifique abstraite">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="atom-core">⚛</div><span class="atom-dot dot-a"></span><span class="atom-dot dot-b"></span><span class="atom-dot dot-c"></span>
+        <div class="visual-caption"><span class="pulse"></span> EXPLORER LE MONDE QUI NOUS ENTOURE</div>
+      </div>
+    </section>
+
+    <section class="section class-section" id="classes">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">RESSOURCES PAR NIVEAU</p><h2>Choisis ta classe.</h2></div>
+        <p>Les cours et activités sont organisés par niveau pour retrouver rapidement ce dont tu as besoin.</p>
+      </div>
+      <div class="class-grid">
+        <a class="class-card class-six" href="#ressources" data-level="6e">
+          <span class="class-number">01 / COLLÈGE</span><span class="class-grade">6e</span>
+          <span class="class-description">Matière, mouvement, énergie et information.</span><span class="card-arrow">Explorer le niveau ↗</span>
+        </a>
+        <a class="class-card class-four" href="#ressources" data-level="4e">
+          <span class="class-number">02 / COLLÈGE</span><span class="class-grade">4e</span>
+          <span class="class-description">Observer, expérimenter et expliquer les phénomènes.</span><span class="card-arrow">Explorer le niveau ↗</span>
+        </a>
+        <a class="class-card class-three" href="#ressources" data-level="3e">
+          <span class="class-number">03 / COLLÈGE</span><span class="class-grade">3e</span>
+          <span class="class-description">Approfondir les notions et préparer le brevet.</span><span class="card-arrow">Explorer le niveau ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="resources-section" id="ressources">
+      <div class="section-heading">
+        <div><p class="eyebrow">BIBLIOTHÈQUE PÉDAGOGIQUE</p><h2 id="resourceTitle">Toutes les ressources.</h2></div>
+        <p>Cette première version contient des emplacements prêts à recevoir tes documents et liens.</p>
+      </div>
+      <div class="resource-tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Rechercher une ressource…" aria-label="Rechercher une ressource"></label>
+        <div class="filter-group" role="group" aria-label="Filtrer par niveau">
+          <button class="filter active" data-filter="tous">Tout</button>
+          <button class="filter" data-filter="6e">6e</button>
+          <button class="filter" data-filter="4e">4e</button>
+          <button class="filter" data-filter="3e">3e</button>
+        </div>
+      </div>
+      <div class="resource-grid" id="resourceGrid">
+        <article class="resource-card" data-level="6e" data-search="fiche cours matière états physiques pdf">
+          <div class="resource-icon pdf-icon">PDF</div><div class="resource-meta">6e <span>·</span> COURS</div>
+          <h3>La matière et ses états</h3><p>Fiche de cours et vocabulaire essentiel.</p><span class="resource-status">À compléter avec ton PDF</span>
+        </article>
+        <article class="resource-card" data-level="6e" data-search="vidéo mouvement trajectoire vitesse">
+          <div class="resource-icon video-icon">▶</div><div class="resource-meta">6e <span>·</span> VIDÉO</div>
+          <h3>Observer un mouvement</h3><p>Une ressource vidéo pour revoir les notions.</p><span class="resource-status">Lien à ajouter</span>
+        </article>
+        <article class="resource-card" data-level="4e" data-search="quiz transformations chimiques exercice">
+          <div class="resource-icon quiz-icon">?</div><div class="resource-meta">4e <span>·</span> QUIZ</div>
+          <h3>Tester ses connaissances</h3><p>Un premier quiz de démonstration est disponible ci-dessous.</p><a class="card-link" href="#quiz">Faire le quiz ↗</a>
+        </article>
+        <article class="resource-card" data-level="4e" data-search="simulation électricité circuit virtuel">
+          <div class="resource-icon sim-icon">⌁</div><div class="resource-meta">4e <span>·</span> SIMULATION</div>
+          <h3>Explorer un circuit électrique</h3><p>Simulation ou expérience virtuelle.</p><span class="resource-status">Lien à ajouter</span>
+        </article>
+        <article class="resource-card" data-level="3e" data-search="fiche révision énergie brevet pdf">
+          <div class="resource-icon pdf-icon">PDF</div><div class="resource-meta">3e <span>·</span> RÉVISIONS</div>
+          <h3>Énergie et conversions</h3><p>Fiche de synthèse pour réviser.</p><span class="resource-status">À compléter avec ton PDF</span>
+        </article>
+        <article class="resource-card" data-level="3e" data-search="animation atome modèle scientifique">
+          <div class="resource-icon animation-icon">✳</div><div class="resource-meta">3e <span>·</span> ANIMATION</div>
+          <h3>Visualiser la structure de l'atome</h3><p>Animation scientifique à intégrer.</p><span class="resource-status">Lien à ajouter</span>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Aucune ressource ne correspond à cette recherche.</p>
+      <p class="small-note">Les intitulés ci-dessus sont des exemples de structure, pas des documents de cours validés. Les ressources réelles seront ajoutées à partir de tes fichiers.</p>
+    </section>
+
+    <section class="split-section" id="methodes">
+      <div class="split-copy">
+        <p class="eyebrow dark-eyebrow">POUR PROGRESSER</p><h2>Les bonnes méthodes font les bons scientifiques.</h2>
+        <p>Retrouve les méthodes utiles pour travailler avec rigueur : convertir des unités, exploiter un graphique, rédiger une conclusion ou présenter un calcul.</p>
+        <a class="text-link" href="mailto:contact@example.com?subject=Ressources%20de%20m%C3%A9thode">Proposer une méthode à ajouter ↗</a>
+      </div>
+      <div class="method-list">
+        <div><span>01</span><strong>Réaliser un calcul et rédiger une réponse</strong><span>↗</span></div>
+        <div><span>02</span><strong>Convertir des unités</strong><span>↗</span></div>
+        <div><span>03</span><strong>Lire et exploiter un graphique</strong><span>↗</span></div>
+        <div><span>04</span><strong>Construire un raisonnement scientifique</strong><span>↗</span></div>
+      </div>
+    </section>
+
+    <section class="explore-section" id="explorer">
+      <div class="section-heading light-heading"><div><p class="eyebrow">SCIENCES EN ACTION</p><h2>Pour aller plus loin.</h2></div><p>Des ressources complémentaires pour observer, manipuler et approfondir.</p></div>
+      <div class="explore-grid">
+        <article><span class="explore-symbol">◉</span><h3>Vidéos scientifiques</h3><p>Des expériences filmées et des explications en images.</p><span class="coming">Emplacement à personnaliser</span></article>
+        <article><span class="explore-symbol">⌘</span><h3>Simulations interactives</h3><p>Faire varier des paramètres et observer les résultats.</p><span class="coming">Emplacement à personnaliser</span></article>
+        <article><span class="explore-symbol">✳</span><h3>Animations</h3><p>Visualiser des phénomènes difficiles à observer directement.</p><span class="coming">Emplacement à personnaliser</span></article>
+      </div>
+    </section>
+
+    <section class="quiz-section" id="quiz">
+      <div class="quiz-intro"><p class="eyebrow dark-eyebrow">MINI-ENTRAÎNEMENT</p><h2>Une question pour commencer.</h2><p>Ce quiz de démonstration permet de vérifier le fonctionnement de l'interactivité. Il pourra être remplacé par des quiz adaptés à chaque chapitre.</p></div>
+      <div class="quiz-box">
+        <p class="quiz-counter">QUESTION 01 · 4e — NOTION DE MASSE</p>
+        <h3>Quel instrument utilise-t-on pour mesurer la masse d'un objet ?</h3>
+        <div class="quiz-options">
+          <button data-answer="false">Un dynamomètre</button><button data-answer="true">Une balance</button><button data-answer="false">Un thermomètre</button>
+        </div>
+        <p id="quizFeedback" class="quiz-feedback" aria-live="polite">Choisis une réponse pour afficher la correction.</p>
+      </div>
+    </section>
+
+    <section class="info-section" id="infos">
+      <div><p class="eyebrow dark-eyebrow">INFORMATIONS</p><h2>Un espace partagé pour apprendre.</h2></div>
+      <div class="info-copy"><p>Les ressources sont proposées à des fins pédagogiques. Les élèves et les familles peuvent les consulter pour accompagner le travail réalisé en classe. Les collègues peuvent également y trouver des supports et des liens utiles.</p><p class="privacy-note"><strong>Respect de la vie privée :</strong> ce site ne comporte pas de compte élève ni de formulaire collectant des données personnelles. Ne publie pas de copies, noms, photos ou informations identifiantes d'élèves.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">⚛</span><span><strong>PHYSIQUE-CHIMIE</strong><small>ESPACE PÉDAGOGIQUE</small></span></a>
+    <p>Apprendre · Expérimenter · Comprendre</p>
+    <small>© <span id="year"></span> · Site pédagogique indépendant</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
